@@ -1,0 +1,22 @@
+export default CategoryList = [
+    {
+        id:1,
+        name:'Latest'
+    },
+    {
+        id:2,
+        name:'Word'
+    },
+    {
+        id:3,
+        name:'Business'
+    },
+    {
+        id:4,
+        name:'Sports'
+    },
+    {
+        id:5,
+        name:'Movie'
+    },
+]
