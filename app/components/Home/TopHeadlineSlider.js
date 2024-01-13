@@ -2,19 +2,9 @@ import React, { useEffect, useState } from 'react'
 import { Text, View ,FlatList, TouchableOpacity, Image, Dimensions } from 'react-native'
 import GlobalApi from '../../services/GlobalApi'
 
-function TopHeadlineSlider() {
+function TopHeadlineSlider({newList}) {
 
-    const [newList, setNewList] = useState([])
-
-    useEffect(() => {
-        getTopHeadline()
-    }, [])
-
-    const getTopHeadline = async () => {
-        const result = (await GlobalApi.getTopOnline).data;
-
-        setNewList(result.articles)
-    }
+    
     return (
         <View style={{marginTop:15}}>
             <FlatList
