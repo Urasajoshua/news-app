@@ -2,6 +2,7 @@ import React from 'react'
 import { View ,Text} from 'react-native'
 import CategoryTextSlider from '../components/Home/CategoryTextSlider'
 import { Ionicons } from '@expo/vector-icons';
+import TopHeadlineSlider from '../components/Home/TopHeadlineSlider';
 
 function Home() {
   return (
@@ -11,7 +12,10 @@ function Home() {
         <Ionicons name="notifications" size={24} color="black" />
         </View>
        
+       {/* category list */}
         <CategoryTextSlider/>
+        {/* top headline slider*/}
+        <TopHeadlineSlider/>
         
     </View>
   )
